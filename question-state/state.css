@@ -1,0 +1,68 @@
+.tabList {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: table;
+}
+.tabList li {
+	margin: 0;
+	padding: 0px; 
+	display: table-cell;
+	position: relative;
+	top: 0px;
+	z-index:1;
+	border: 1px solid black;
+	border-bottom: red;
+	color: #0000FF;
+	overflow-y: visible;
+
+}
+li.selectedTab {
+	background-color: #FFFFFF;
+	color: black;
+	z-index:3;
+}
+li.selectedTab button {
+	position: relative;
+	background-color: white;
+}
+.tabBtn {
+	position: relative;
+	text-decoration:none;
+	color: black;
+	background-color: white;
+	border: none;
+	z-index:1;
+}
+.tabBtn:focus {
+	outline: none;
+	border-top: 2px solid blue;
+}
+
+.panels {
+	border: thin solid black;
+	background-color: white;
+	position: relative;
+	z-index: 2;
+	margin-top: -1px;
+}
+.panels div {
+	padding: 1.13em;
+}
+
+.show {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+
+div[role="main"], main {
+	border-top: solid thin black;
+}
+
+footer {
+	font-size: 85%;
+	padding: 1em;
+	border-top: solid thin black;
+}

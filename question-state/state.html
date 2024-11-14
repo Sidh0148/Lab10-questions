@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>State Management</title>
+		<link rel="Stylesheet" href="state.css" type="text/css">
+	</head>
+	<body>
+		<header>
+			<h1>State Management</h1>
+			<p>Instructions: Use Left and right arrow keys to moves focus to the next and previous tab. 
+			<h2>What to do:</h2>
+			<p>Modify the JS to update the aria-selected state dynamically. The active tab element has the state aria-selected set to true and all other tab elements have it set to false.</p>
+		</header>
+		<main>
+			<h2 id="h2heading">Tabbed Interface</h2>
+			<p>All text here is from <a href="http://fillerama.io/" target="_blank" rel="noopener noreferrer">Fillerama</a>:</p>
+	
+			<div class="tabHolder">
+				<ul class="tabList" role="tablist"  aria-labelledby="h2heading" >
+					<li class="selectedTab"><button id="adTabBtn" aria-selected="true"  role="tab" aria-controls="adTabPanel" class="tabBtn">Arrested Development</button></li>
+					<li><button id="drWTabBtn" class="tabBtn" aria-selected="false" role="tab" aria-controls="drWTabPanel" tabindex="-1">Doctor Who</button></li>
+					<li><button id="futuramaTabBtn" class="tabBtn"  aria-selected="false" role="tab" aria-controls="futuramaTabPanel" tabindex="-1">Futurama</button></li>
+				</ul>
+				<div class="panels">
+					<div id="adTabPanel" class="tabPanel" role="tabpanel">
+						<h2 id="adh2">Arrested Development Filler</h2>
+						<h3>I'm afraid I just blue myself.</h3>
+						<p>I'm half machine. I'm a monster. Well, what do you expect, mother? What's Spanish for "I know you speak English?" Marry me.</p>
+						<p>Across from where? I hear the jury's still out on science. <strong> It's called 'taking advantage.</strong> <em>' It's what gets you ahead in life.</em> Say goodbye to these, because it's the last time!</p>
+						<h3>As you may or may not know, Lindsay and I have hit a bit of a rough patch.</h3>
+						<p>Army had half a day. That's what it said on 'Ask Jeeves.' That's what it said on 'Ask Jeeves.' Guy's a pro. I've opened a door here that I regret. I've opened a door here that I regret.</p>
+						<ol>
+							<li>Oh, you're gonna be in a coma, all right.</li>
+							<li>As you may or may not know, Lindsay and I have hit a bit of a rough patch.</li>
+							<li>There's so many poorly chosen words in that sentence.</li>
+						</ol>
+
+						<h3>I hear the jury's still out on science.</h3>
+						<p>I've opened a door here that I regret. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense. Oh, you're gonna be in a coma, all right. There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor.</p>
+						<ul>
+							<li>Michael!</li>
+							<li>I care deeply for nature.</li>
+							<li>Get me a vodka rocks. And a piece of toast.</li>
+						</ul>
+					</div>
+					<div id="drWTabPanel" role="tabpanel" class="hidden tabPanel">
+						<h2 id="drwh2">Doctor Who Filler</h2>
+						<h3>They're not aliens, they're Earth…liens!</h3>
+						<p>It's a fez. I wear a fez now. Fezes are cool. I am the Doctor, and you are the Daleks! Stop talking, brain thinking. Hush. You've swallowed a planet! Aw, you're all Mr. Grumpy Face today.</p>
+						<p>I am the Doctor, and you are the Daleks! I'm the Doctor, I'm worse than everyone's aunt. *catches himself* And that is not how I'm introducing myself. You hate me; you want to kill me! <strong> Well, go on!</strong> <em> Kill me!</em> KILL ME!</p>
+						<h3>You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better?</h3>
+						<p>Father Christmas. Santa Claus. Or as I've always known him: Jeff. Aw, you're all Mr. Grumpy Face today. I'm the Doctor, I'm worse than everyone's aunt. *catches himself* And that is not how I'm introducing myself.</p>
+						<ol>
+							<li>Stop talking, brain thinking. Hush.</li><li>You know how I sometimes have really brilliant ideas?</li><li>*Insistently* Bow ties are cool! Come on Amy, I'm a normal bloke, tell me what normal blokes do!</li>
+						</ol>
+						<h3>*Insistently* Bow ties are cool! Come on Amy, I'm a normal bloke, tell me what normal blokes do!</h3>
+						<p>I hate yogurt. It's just stuff with bits in. The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.</p>
+						<ul>
+							<li>I'm the Doctor, I'm worse than everyone's aunt. *catches himself* And that is not how I'm introducing myself.</li>
+    							<li>It's a fez. I wear a fez now. Fezes are cool.</li>
+    							<li>Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you?</li>
+						</ul>
+					</div>
+					<div id="futuramaTabPanel" role="tabpanel" class="hidden tabPanel">
+					<h2 id="futh2">Futurama Filler</h2>
+						<h3>Daddy Bender, we're hungry.</h3>
+						<p>I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense. Oh sure! Blame the wizards! Calculon is gonna kill us and it's all everybody else's fault! Eeeee! Now say "nuclear wessels"!</p>
+						<p>Bender?! You stole the atom. No! I want to live! There are still too many things I don't own! I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense. <strong> Bender, hurry!</strong> <em> This fuel's expensive!</em> Also, we're dying!</p>
+						<h2>Is today's hectic lifestyle making you tense and impatient?</h2>
+						<p>Then throw her in the laundry room, which will hereafter be referred to as "the brig". I had more, but you go ahead. Ok, we'll go deliver this crate like professionals, and then we'll go ride the bumper cars.</p>
+						<ol>
+							<li>What are their names?</li>
+							<li>Bender, I didn't know you liked cooking. That's so cute.</li>
+							<li>File not found.</li>
+						</ol>
+						<h3>Belligerent and numerous.</h3>
+						<p>Yes. You gave me a dollar and some candy. I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! Now, now. Perfectly symmetrical violence never solved anything. Enough about your promiscuous mother, Hermes! We have bigger problems.</p>
+						<ul>
+							<li>The alien mothership is in orbit here. If we can hit that bullseye, the rest of the dominoes will fall like a house of cards. Checkmate.</li>
+							<li>Yeah, I do that with my stupidness.</li>
+							<li>Bender, you risked your life to save me!</li>
+						</ul>			
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Go back to <a href="../">ARIA Intro Assignments</a>.</p>
+			<p>Copyright: Andrew Nordlund 2023</p>
+		</footer>
+		<script src="state.js"></script>
+	</body>
+</html>
